@@ -1,17 +1,19 @@
 *{
     border: 0;
     margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
 }
 body{
     background-color: #1e2323;
+    font-family: 'Mozilla Text';
 }
 nav{
     display: grid;
     grid-template-columns: auto 1fr;
 }
 .logo{
-    font-size: 3rem;
+    font-size: 2rem;
+    font-family:monospace;
     font-weight: bolder;
     background: linear-gradient(to right, #ff02f7a5, #25666b);
     -webkit-background-clip: text;
@@ -41,16 +43,17 @@ nav{
     }
     .options a{
         font-size: 1rem;
-        line-height: 2px;
+        margin-bottom: 0.5rem;
     }
     .logo{
         font-size: 2rem;
     }
 }
-/* header{
+header{
     position: sticky;
     top:0px;
-} */
+    background-color: #191b1c;
+}
 .hero{
     margin-top: 2rem;
     display: grid;
@@ -62,6 +65,7 @@ nav{
 .b1{
     grid-area: b1;
     background-image: url("b2.jpeg");
+    height: 40vh;
     background-size: cover;
     border: 2px solid blanchedalmond;
 }
@@ -79,10 +83,14 @@ nav{
 }
 .b3{
     grid-area: b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .b4{
     grid-area: b4;
     background-image: url("b3.jpg");
+    height: 40vh;
     background-size: cover;
     border: 2px solid blanchedalmond;
 
@@ -169,7 +177,53 @@ nav{
     }
 }
 .bodyg{
-    height: 50vh;
+    margin-left: 2rem;
+    margin-right: 2rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.gd{
+    padding: 1rem;
+    margin: 1rem;
+    background-color: #1d4144;
+    border-right: 3px solid navajowhite;
+    border-bottom: 3px solid navajowhite;
+    border-top-left-radius: 10px;
+    box-shadow: 5px 5px rgba(87, 76, 76, 0.747) ;
+}
+.gd img{
+    height: 25vh;
+    width: 15vw;
+    border: 5px solid rgba(30, 226, 252, 0.527);
+    border-radius: 10px;
+}
+.gd h4{
+    padding: 0.4rem;
+    font-size: 0.7rem;
+    color: #bbfefa;
+}
+.gd p{
+    padding: 0.2rem;
+    font-size: small;
+    color: whitesmoke;
+}
+@media screen and (max-width:1000px)
+{
+    .bodyg{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .gd img{
+        width: 70%;
+    }
+}
+@media screen and (max-width:720px)
+{
+    .bodyg{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .gd img{
+        width: 70%;
+    }
 }
