@@ -64,7 +64,7 @@ header{
 }
 .b1{
     grid-area: b1;
-    background-image: url("b2.jpeg");
+    background-image: url("img-assets/b2.jpeg");
     height: 200px;
     background-size: contain;
     border: 2px solid blanchedalmond;
@@ -89,7 +89,7 @@ header{
 }
 .b4{
     grid-area: b4;
-    background-image: url("b3.jpg");
+    background-image: url("img-assets/b3.jpg");
     height: 200px;
     background-size: contain;
     border: 2px solid blanchedalmond;
@@ -103,13 +103,13 @@ header{
         grid-template-columns: 1fr;
     }
     .b1{
-        background-image: url("b2.jpeg");
+        background-image: url("img-assets/b2.jpeg");
         background-size: contain;
         border: 2px solid blanchedalmond;
         height: 200px;
     }
     .b4{
-        background-image: url("b3.jpg");
+        background-image: url("img-assets/b3.jpg");
         background-size: contain;
         border: 2px solid blanchedalmond;
         height: 200px;
@@ -129,7 +129,7 @@ header{
     grid-template-columns: 1fr 1fr;
 }
 .bodyimage{
-    background-image: url(m1.avif);
+    background-image: url("img-assets/m1.avif");
     background-size: cover;
     display: flex;
     align-items: end;
@@ -240,7 +240,7 @@ header{
     grid-template-columns: 1fr auto;
 }
 .imgrated{
-    background-image: url("gta.png");
+    background-image: url("img-assets/gta.png");
     background-size: cover;
 }
 .inforatedhead{
