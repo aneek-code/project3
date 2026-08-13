@@ -65,8 +65,8 @@ header{
 .b1{
     grid-area: b1;
     background-image: url("b2.jpeg");
-    height: 40vh;
-    background-size: cover;
+    height: 200px;
+    background-size: contain;
     border: 2px solid blanchedalmond;
 }
 .b2{
@@ -90,8 +90,8 @@ header{
 .b4{
     grid-area: b4;
     background-image: url("b3.jpg");
-    height: 40vh;
-    background-size: cover;
+    height: 200px;
+    background-size: contain;
     border: 2px solid blanchedalmond;
 
 }
@@ -104,15 +104,15 @@ header{
     }
     .b1{
         background-image: url("b2.jpeg");
-        background-size: cover;
+        background-size: contain;
         border: 2px solid blanchedalmond;
-        height: 25vh;
+        height: 200px;
     }
     .b4{
         background-image: url("b3.jpg");
-        background-size: cover;
+        background-size: contain;
         border: 2px solid blanchedalmond;
-        height: 25vh;
+        height: 200px;
     }
 }
 .headf{
@@ -226,4 +226,111 @@ header{
     .gd img{
         width: 70%;
     }
+}
+.toprated{
+    margin-bottom: 2rem;
+}
+.bodyrated{
+    margin-left: 3rem;
+    margin-right: 3rem;
+    background-color: rgba(69, 61, 84, 0.772);
+    display: grid;
+    border: 3px solid rgb(131, 40, 114);
+    box-shadow: 5px 2px whitesmoke;
+    grid-template-columns: 1fr auto;
+}
+.imgrated{
+    background-image: url("gta.png");
+    background-size: cover;
+}
+.inforatedhead{
+    padding: 1rem;
+    text-align: center;
+    line-height: 30px;
+}
+.inforatedhead h4{
+    font-size: 2rem;
+    color: wheat;
+}
+.inforatedhead p{
+    color: rgb(6, 197, 6);
+}
+.subimages{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.subimages img{
+    height: 70px;
+    width: 100%;
+    object-fit: cover;
+    margin: 1rem;
+    border: 1px solid rgb(185, 185, 221);
+    border-radius: 10px;
+}
+.bb{
+    display: flex;
+    justify-content: center;
+}
+.price{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.price h3{
+    font-size: 2rem;
+    color: #bbfefa;
+}
+.price button{
+    padding: 0.5rem;
+    width: 30%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(6, 197, 6);
+    font-size: 1rem;
+    color: rgb(8, 8, 7);
+}
+@media screen and (max-width:1000px)
+{
+    .bodyrated{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .imgrated{
+        height: 300px;
+    }
+    .subimages{
+        display: none;
+    }
+}
+footer{
+    background-color: #191b1c;
+    padding: 3rem;
+    font-size: 12px;
+    color: rgb(154, 144, 124);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.footer1 a{
+    text-decoration: none;
+    color: wheat;
+    font-size: 1.7rem;
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem;
+}
+.footerby a{
+    text-decoration: none;
+    color: rgb(154, 144, 124);
+    padding: 1rem;
+}
+.footerby{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footerby h4{
+    color: wheat;
 }
